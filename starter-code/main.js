@@ -25,21 +25,9 @@ function createBoard() {
 	cardElement.className = 'card';
 	cardElement.addEventListener('click', isTwoCards);
 	cardElement.setAttribute('data-card', cards[i]);
-					
+   		
 }
 }
-
-function isMatch() {
-	if ( cardsInPlay [0] === cardsInPlay [1]) {
-	alert ("You Got A Match!");
-	} else  {
-	alert("Sorry,Try Again.");
-	}
-	
-	
-	
-}
-
 
 function isTwoCards() {
 	cardsInPlay.push(this.getAttribute('data-card'));
@@ -59,6 +47,22 @@ function isTwoCards() {
 		
 	}
 }
+
+function isMatch() {
+	if ( cardsInPlay [0] === cardsInPlay [1]) {
+	alert ("You Got A Match!");
+	} else  {
+	alert("Sorry,Try Again.");
+	}
+}
+
+	
+	
+	
+	
+
+
+
 
 createBoard();
 
